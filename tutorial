@@ -1,0 +1,26 @@
+1- Para incluir a biblioteca em seu programa, bastar utilizar #include <estrutura.c> e poderá ter acesso as operações principais de lista, pilha, filha e árvore binária.
+
+2- Para criar a estrutura Lista no seu programa basta utilizar o tipo "Lista" que foi implementado na nossa biblioteca. Por exemplo, para criar uma nova lista no programa pricipal chamada novaLista, basta apenas usar: "Lista* novaLista;" dentro da função main. 
+
+Pilha: Para criar a estrutura pilha, basta no programa principal utilizar da struct Pilha. ********* falta
+
+Fila:
+Arvore:
+
+
+PILHA
+
+Uso das funções:
+
+pilhaVazia: Para saber se uma pilha está vazia, precisa-se apenas saber se seu topo está vazio. A função pilhaVazia retorna 0 se a pilha não estiver vazia e 1 se ela estiver vazia. 
+
+inicializaPilha: Essa função não tem retorno e é utilizada para zerar o topo da pilha, tornando-a vazia.
+
+tamanhoPilha: Retorna o tamanho, ou seja, o numero de elementos de uma pilha. Basta passar como parâmetro o endereço da pilha que se quer saber o tamanho. 
+
+criaItemPilha: Rertona um registro que contem uma chave e pode conter mais elementos. Essa função será usada para retornar um registro a ser inserido na pilha.
+
+Empilha: Retorna 1 caso a o elemento o registro inserido na pilha. Essa função insere um novo registro na pilha passada como parâmentro. Exemplo, tendo criada a pilha "MinhaPilha" passa-se como primeiro parâmetro e tendo criado através da função criaItemPilha um registro "reg" a ser adicionado, a utilização ficaria da seguinte forma: "Empilha(MinhaPilha, reg);". Importante ressaltar que o MinhaPilha é do tipo ponteiro e reg do tipo registro(struct com chave inteira).
+
+Desempilha:  
+
