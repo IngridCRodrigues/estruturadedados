@@ -102,7 +102,7 @@ void reinicializarLista(Lista *l) {
         free(apagar);
     }
 }
-// ACABOU LISTA /////////////////////////////////
+//////////////////////////////// ACABOU LISTA /////////////////////////////////
 
 int main(int argc, char const *argv[])
 {
@@ -113,11 +113,7 @@ int main(int argc, char const *argv[])
 
     scanf("%d", &op);
     while (op != 0) {
-        printf("\n 1- Iniciar lista \n 
-            2- Inserir novo elemento \n 
-            3- Esvaziar Lista \n 
-            4- Verficar se a lista está vazia 
-            \n 5- Imprimir lista"); 
+        printf("\n 1- Iniciar lista \n 2- Inserir novo elemento \n 3- Esvaziar Lista \n 4- Verficar se a lista está vazia \n 5- Imprimir lista"); 
         switch (op) {
 
             case 1: 
