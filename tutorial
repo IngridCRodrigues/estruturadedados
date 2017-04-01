@@ -24,3 +24,26 @@ Empilha: Retorna 1 caso a o elemento o registro inserido na pilha. Essa função
 
 Desempilha:  
 
+
+
+ARVORE 
+
+Utilizaremos nesse tutorial o tipo PontArv. Esse tipo é um ponteiro para um nó de arvore. Nesse nó existe uma chave e dois ponteiros do mesmo struct de nó: esquerda e direita.
+
+inicializaArv: Retorna NULL. Basta no programa principal utilizar o tipo PontArv(ponteiro para nó de arvore possuindo chave e um ponteiro para esquerda e outro para direita) atribuindo a uma variável que será igualada a função inicializaArv. Exemplo: Pont raiz = inicializa(); Dessa forma, estamos criando a raiz da árvore.
+
+insereNodeArv: Recebe chave do tipo inteiro e retorna nó de árvore. Basta passar como parâmentro uma chave, e a função alocará espaço na memória para um novo Nó. Ela atribui para a esquerda e direita do nó o valor NULL. Para inserir a chave 2 em um nó, basta criar no programa principal uma variavel do tipo PontArv e atribuirmos a função insereNodeArv(int chave). Exemplo: Para inserir a chave inteita '2' no nó do tipo PontArv "no" basta passarmos como paramentro o numero 2 na função. "PontArv no = insereNodeArv(2);"
+
+insereArv: Essa função recebe como parametro uma raiz e um nó. Ela retorna a raiz depois de inserir um no nas suas ramificações ou retorna o proprio no se a raiz passada for nula. Exemplo: Inserindo a chave 2 em um no chamado "no" através da função insereNoArv é possivel inserir na árvore. 
+PontArv no = insereNodeArv(2);
+raiz = insereArv(raiz, no);
+Se a raiz principal for nula, o 2 é adicionado na raiz principal, senão, é adicionado das ramificações. 
+
+buscaArv: Retorna null se chave não existir na arvore ou o endereço da chave caso a chave passada exista dentro da árvore. Recebe como parâmentro a raiz da árvore e um inteiro que é a chave a ser procurada. Exemplo: Procurando o inteiro 2 na árvore, basta no programa principal criar a variável p do tipo PontArv fazendo ela receber o endereço da chave buscada, ou NULL caso não exista.
+"PontArv p = buscaArv(raiz, 2);"
+
+numeroNosArv: Retorna quantidade inteira de nos da arvore. O parâmetro passado é a raiz do tipo PontArv. Exemplo: No programa principal cria-se a variável inteira "nos" e atribui-se a ela a funcao numeroNOsArv que tem por parâmentro o ponteiro tipo PontArv "raiz".
+nos = numeroNosArv(raiz);
+
+imprimeArvCrescente: Recebe como parâmetro um PontArv que é a raiz: "ImprimeArvCrescente(PontArv raiz);". Sem retorno. Do tipo void, apenas exibe o conteúdo da árvore em ordem crescente: Esquerda, Raiz, Direita. Exemplo: Tendo a raiz de uma árvore, passamos ela como parâmetro dentro da função ImprimeArvCrescente chamada no programa principal.
+ImprimeArvCrescente(raiz);
